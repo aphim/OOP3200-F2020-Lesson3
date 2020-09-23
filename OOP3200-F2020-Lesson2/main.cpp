@@ -3,8 +3,8 @@
  *	In this example program, did the following:
  *		- Examined a simple class with 'instance' data-members, a constructor, accessors, mutators.
  *
- *	@author		<YOUR-NAME>
- *	@studentID  <YOUR STUDENT ID>
+ *	@author		Jacky Yuan
+ *	@studentID  100520106
 */
 
 #include <iostream> 		// cin, cout
@@ -21,7 +21,7 @@ int main()
 {
 	// Declarations
 	// a point called 'origin', initialized to 0, 0
-	CartesianPoint origin = CartesianPoint(0, 0);
+	CartesianPoint origin = CartesianPoint(10, 20);
 	
 	// a point called 'destination'
 	CartesianPoint destination;
@@ -66,6 +66,10 @@ int main()
 		cout << "\nThe Distance between " << origin.ToString()
 			<< " and " << destination.ToString() << " is "
 			<< distance << ". " << endl;
+
+		CartesianPoint anotherPoint;
+		cout << "\nEnter another point: ";
+
 	}
 
 	catch (exception& ex)
