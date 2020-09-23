@@ -15,6 +15,10 @@ public:
 	*	- should set values for each member variable
 	*/
 	CartesianPoint(int x = 1, int y = 1);
+	~CartesianPoint();
+
+	/* operator overloads */
+	double operator-(const CartesianPoint& point_to) const;
 
 	// --------------------------------------------------------------------------------
 	/* Accessors: Used to query the state of the object
@@ -45,7 +49,7 @@ public:
 
 
 	// get the distance between this point and a second point
-	double GetDistanceTo(CartesianPoint pointTo) const;
+	double GetDistanceTo(CartesianPoint point_to) const;
 
 	// convert the obj to a string
 	std::string ToString() const;
